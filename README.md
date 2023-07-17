@@ -25,11 +25,20 @@ source ~/.env-deluxe/aliases.sh
 
 Add the command above to the correct shell initialisation file:
 
-**Ubuntu**: `echo 'source ~/.env-deluxe/aliases.sh' >> ~/.bashrc`
+**Ubuntu**: 
+```bash
+echo 'source ~/.env-deluxe/aliases.sh' >> ~/.bashrc
+```
 
-**Zsh**: `echo 'source ~/.env-deluxe/aliases.sh' >> ~/.zshrc`
+**Zsh**: 
+```bash
+echo 'source ~/.env-deluxe/aliases.sh' >> ~/.zshrc
+```
 
-**Others**: `echo 'source ~/.env-deluxe/aliases.sh' >> ~/.bash_profile`
+**Others**: 
+```bash
+echo 'source ~/.env-deluxe/aliases.sh' >> ~/.bash_profile`
+```
 
 To apply the changes, restart your terminal or run source ~/.bashrc or source ~/.bash_profile.
 
@@ -49,4 +58,10 @@ Usage: gp
 
 ### `gs`: Git status.
 Usage: gs
+
+## WSL Aliases
+
+### `wsl-update-time` Update the WSL internal clock
+Usage: `wsl-update-time`
+WSL has a weird clock skew issue that causes SSL certificate signatures to be expired on creation. See this [WSL bug megathread](https://github.com/microsoft/WSL/issues/10006)
 
